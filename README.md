@@ -410,7 +410,9 @@ p_all: The probability that all of the cadets in the group size listed were the 
 
 The mathematical formulation for these are below:
 
-p_know one cadet = (number of cadets previously taught) / (student body size)
+$$
+p_{\text{know one cadet}} = \frac{\text{number of cadets previously taught}}{\text{student body size}}
+$$
 
 $$
 n = \text{group size}
@@ -434,15 +436,27 @@ One additional step that I added in to this calculator that is, in my opinion, t
 
 This is an algeabraic rearrangement of the p_none formula:
 
-n <= (ln(1-certainty level)) / (ln(1-p))
+$$
+n \geq \frac{\ln(1-\text{certainty level})}{\ln(1-p)}
+$$
 
-Where:
+\text{Where:}
 
-n = Number of cadets that must be present
+$$
+n = \text{Number of cadets that must be present}
+$$
 
-certainty level = certainty level of choice (in this calculator I chose to use 50% and 99.99%)
+$$
+\text{certainty level} = \text{certainty level of choice}
+$$
 
-p = probability you know one cadet, or (number of cadets previously taught / student body size)
+$$
+p = \text{probability you know one cadet}
+$$
+
+$$
+p = \frac{\text{number of cadets previously taught}}{\text{student body size}}
+$$
 
 ### main
 main() arranges each of these preceding functions appropriately as arguments for each other and executes the program.
