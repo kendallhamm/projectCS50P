@@ -412,13 +412,21 @@ The mathematical formulation for these are below:
 
 p_know one cadet = (number of cadets previously taught) / (student body size)
 
-n = group size
+\[
+n = \text{group size}
+\]
 
-p_none = (1-p)^n
+\[
+p_{\text{none}} = (1-p)^n
+\]
 
-p_at_least_one = 1 - p_none
+\[
+p_{\text{at least one}} = 1 - p_{\text{none}}
+\]
 
-p_all = p^n
+\[
+p_{\text{all}} = p^n
+\]
 
 
 ### near_certain()
